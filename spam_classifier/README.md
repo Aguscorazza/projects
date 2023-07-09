@@ -1,0 +1,2 @@
+# Spam Classifier
+The objective of this project is to build a spam classifier using Machine Learning Techniques. The data used in this notebook was provided by "Apache SpamAssasin" and it consists of around 6000 emails. I've implemented BagOfWords and Term Frequency-Inverse Document Frequency vectors to represent the data and feed the ML models. As a model I've only implemented a Logistic Regression model, which trains fast enough and achieves high performance (around 97%) on the dataset.
