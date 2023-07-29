@@ -2,7 +2,7 @@
 #### Machine Learning
 The objective of this project is to build a simple email spam classifier using Machine Learning Techniques. The data used in this notebook was provided by Enron-spam corpus and it consists of around 33716 preprocessed emails. I've implemented BagOfWords and Term Frequency-Inverse Document Frequency vectors to represent the data and feed the ML models.
 
-Dataset: [](https://www2.aueb.gr/users/ion/data/enron-spam/)
+Dataset: [Enron-spam corpus](https://www2.aueb.gr/users/ion/data/enron-spam/)
 
 The main ideas of the projects were trying to implement different **custom made Transformers** into **Pipelines** to then apply different preprocessing steps to the dataset. I've done hyperparameter finetuning during the preprocessing and modeling phases using **GridSearchCV()**.
 
