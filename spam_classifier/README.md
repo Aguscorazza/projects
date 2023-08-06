@@ -1,5 +1,5 @@
 # Spam Classifier
-#### Machine Learning
+#### Natural Language Processing
 The objective of this project is to build a simple email spam classifier using Machine Learning Techniques. The data used in this notebook was provided by Enron-spam corpus and it consists of around 33716 preprocessed emails. I've implemented BagOfWords and Term Frequency-Inverse Document Frequency vectors to represent the data and feed the ML models.
 
 Dataset: [Enron-spam corpus](https://www2.aueb.gr/users/ion/data/enron-spam/)
