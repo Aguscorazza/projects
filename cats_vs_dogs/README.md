@@ -1,6 +1,8 @@
 # Cats vs Dogs Classifier using CNN
 #### Computer Vision
-The objective of this project is to build an image classifier capable of distinguish between Dogs and Cats using Convolutional Neural Networks (CNN). The data used in this notebook consists of around 25.000 labeled images. The main ideas of the projects were to develop a robust test harness for estimating the performance of the model, to explore improvements to the model, and to save the model and later load it to make predictions on new data. As the result, the final model was able to achieve an accuracy of 84% in correctly classifying cat and dog images.
+The objective of this project is to build an image classifier capable of distinguish between Dogs and Cats using Convolutional Neural Networks (CNN). The main ideas of the projects were to develop a robust test harness for estimating the performance of the model, to explore improvements to the model, and to save the model and later load it to make predictions on new data. 
+
+The data used in this notebook consists of around 25.000 labeled images. As the result, the final model was able to achieve an accuracy of 84% in correctly classifying cat and dog images.
 
 Dataset: [Cats vs Dogs Dataset](https://www.microsoft.com/en-us/download/details.aspx?id=54765)
 
