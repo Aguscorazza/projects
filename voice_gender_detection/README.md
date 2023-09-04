@@ -1,6 +1,8 @@
 # Voice Gender Recognition System
 #### Speech Analytics
-The primary objective of this project is to develop a system capable of accurately identifying the gender of a speaker from their voice with a high degree of accuracy. This will involve the creation of a machine learning model that can analyze audio features to make gender predictions. The system will be designed to perform real-time gender classification, allowing it to process audio input in real-time and provide gender predictions promptly. This capability is essential for applications like voice assistants, call centers, and online chatbots.
+The primary objective of this project is to develop a system capable of accurately identifying the gender of a speaker from their voice with a high degree of accuracy. This will involve the creation of a machine learning model that can analyze audio features to make gender predictions. 
+
+The system will be designed to perform real-time gender classification, allowing it to process audio input in real-time and provide gender predictions promptly. This capability is essential for applications like voice assistants, call centers, and online chatbots.
 
 The system has been trained on the [Mozilla's Common Voice Dataset](https://www.kaggle.com/datasets/mozillaorg/common-voice). The dataset has been balanced to avoid biases in the training data so, at the end, we have around 67.000 samples to train our ML models.
 
