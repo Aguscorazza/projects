@@ -1,4 +1,4 @@
-# Voice Gender Recognition System
+# Voice Gender Recognition
 #### Speech Analytics
 The primary objective of this project is to develop a system capable of accurately identifying the gender of a speaker from their voice with a high degree of accuracy. This will involve the creation of a machine learning model that can analyze audio features to make gender predictions. 
 
