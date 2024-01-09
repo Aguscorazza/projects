@@ -1,6 +1,6 @@
 # Kinematic Analysis of a 6 DoF Robot
 #### Robotics
-This project consisted of proposing an industrial application and seeing its possible realization through the use of industrial robots. The work focused mainly on kinematic analysis of the robot, that is to say they have not been considered dynamic effects in the study. We've carried out a study of the Direct & Inverse Kinematics of the robots as well as the analysis of the relation of velocities by using the Jacobian, the detection of singularities and, finally, the planning and generation of robots' trajectories.
+This project consisted of proposing an industrial application and seeing its possible realization through the use of industrial robots. We've carried out a study of the Direct & Inverse Kinematics of the robots as well as the analysis of the relation of velocities by using the Jacobian, the detection of singularities and, finally, the planning and generation of robots' trajectories.
 
 ![header](https://github.com/Aguscorazza/projects/assets/52639694/e40980b6-bfb0-4cb7-81e8-508cc1b7f48e)
 
