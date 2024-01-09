@@ -6,6 +6,6 @@ This project consisted of proposing an industrial application and seeing its pos
 
 In this case, it was proposed to implement 3 industrial robots (KUKA KR 120 R2100 nano F exlusive) for use in a series assembly line of a foundry parts factory.
 
-This project was made as part of the Robotics Course at Universidad Nacional de Cuyo. A complete report in Spanish is provided as PDF. 
+This project was made as part of the Robotics Course at Universidad Nacional de Cuyo. A complete report in Spanish and a full animation of the movement of each robot are provided in this repository. 
 
 ![robots](https://github.com/Aguscorazza/projects/assets/52639694/676352fe-3727-47bb-b3ab-436b0c8ddea8)
