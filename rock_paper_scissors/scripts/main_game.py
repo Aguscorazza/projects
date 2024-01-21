@@ -18,7 +18,7 @@ startGame = False
 scores = [0, 0]  # AI - Player
 
 while True:
-    imgBG = cv2.imread("img/BG.png")
+    imgBG = cv2.imread("../img/BG.png")
 
     success, img = cap.read()
     # Scale down the image to the same height as the background player rectangle
@@ -54,7 +54,7 @@ while True:
                     playerMove = Action(playerMove)
 
                     computerMove = get_computer_selection()
-                    imgAI = cv2.imread(f"img/{computerMove}.png", cv2.IMREAD_UNCHANGED)
+                    imgAI = cv2.imread(f"../img/{computerMove}.png", cv2.IMREAD_UNCHANGED)
 
                     round_result = check_rps_result(playerMove, computerMove)
                     if round_result == 1:
