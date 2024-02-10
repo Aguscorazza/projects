@@ -4,6 +4,6 @@ The objective of this project is to build a simple Rock-Paper-Scissors game usin
 
 ![Untitled](https://github.com/Aguscorazza/projects/assets/52639694/4e6d5d55-ea6a-4ec0-8bd9-a002446b3093)
 
-At this moment, the algorithm to detect the player's move is based on counting the number of fingers in the player's hand. Nevertheless, I would like to implement an AI detection algorithm using Convolutional Neural Networks in a near future.
+Presently, our move detection method relies on finger counting, but we're gearing up for a substantial enhancement. In the near future, we plan to implement an advanced AI detection algorithm leveraging Convolutional Neural Networks (CNNs). This upgrade promises a significant boost in accuracy and sophistication, providing a more nuanced interpretation of player gestures.
 
-The computer's move are being generated randomly at this moment. I will implement soon an AI decision-making strategy to select the best possible play.
+On the computational side, the computer's moves are currently generated through a 2nd-order Markov Chain predictor, a sophisticated approach that ensures strategic and dynamic responses. 

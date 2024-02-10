@@ -2,8 +2,8 @@ import cv2
 import cvzone
 from cvzone.HandTrackingModule import HandDetector
 import time
-from RPS import get_computer_selection, check_rps_result, Action
-
+from RPS import check_rps_result, Action
+from RPS_model import MarkovChainPredictor
 
 cap = cv2.VideoCapture(0)
 # Set Width and Height properties
@@ -11,11 +11,15 @@ cap.set(3, 640)
 cap.set(4, 480)
 
 detector = HandDetector(maxHands=1)
+model = MarkovChainPredictor(order=2, smoothing_parameter=0.1, decay_factor=0.9)
 
 timer = 0
 stateResult = False
 startGame = False
 scores = [0, 0]  # AI - Player
+history = []
+sym_to_i = {'R': 1, 'P': 2, 'S': 3}
+i_to_sym = {1: 'R', 2: 'P', 3: 'S'}
 
 while True:
     imgBG = cv2.imread("../img/BG.png")
@@ -41,7 +45,7 @@ while True:
                 if hands:
                     hand = hands[0]
                     fingers = detector.fingersUp(hand)
-                    print(fingers)
+                    #print(fingers)
                     if fingers == [0, 0, 0, 0, 0]:  # rock
                         playerMove = 1
                     elif fingers == [1, 1, 1, 1, 1]:  # paper
@@ -53,10 +57,15 @@ while True:
 
                     playerMove = Action(playerMove)
 
-                    computerMove = get_computer_selection()
-                    imgAI = cv2.imread(f"../img/{computerMove}.png", cv2.IMREAD_UNCHANGED)
+                    model.update_matrix(history)
 
-                    round_result = check_rps_result(playerMove, computerMove)
+                    computerMove = model.predict(history)
+                    history.append(i_to_sym[playerMove.value])
+                    #print(history)
+
+                    imgAI = cv2.imread(f"../img/{sym_to_i[computerMove]}.png", cv2.IMREAD_UNCHANGED)
+
+                    round_result = check_rps_result(playerMove, Action(sym_to_i[computerMove]))
                     if round_result == 1:
                         scores[1] += 1
                     elif round_result == 0:

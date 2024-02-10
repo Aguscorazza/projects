@@ -1,6 +1,6 @@
 import random
 from enum import IntEnum
-
+from RPS_model import RandomPredictor, MarkovChainPredictor
 
 class Action(IntEnum):
     Rock = 1
@@ -28,7 +28,7 @@ def check_rps_result(user_action, computer_action):
     :param computer_action: Action
     :return: 0 - AI won, 1 - Player won, 2 - Tie
     """
-
+    #print(user_action, computer_action)
     if user_action == computer_action:
         print(f"Both players selected {user_action.name}. It's a tie!")
         return 2
